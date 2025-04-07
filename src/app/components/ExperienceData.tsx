@@ -22,7 +22,7 @@ function ExperienceData() {
         const res = await fetch(`/api/photos?limit=6&page=${page}&orderBy=id&orderDir=asc`);
         const data = await res.json();
         // Note: our API returns the array of photos under "photos"
-        setPhotos(data.photos);
+        setPhotos(data.data);
       } catch (error) {
         console.error("Error fetching photos:", error);
       } finally {
@@ -46,7 +46,7 @@ function ExperienceData() {
               height={250}
               className="object-cover w-full h-full"
             />
-            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
+            <div className="absolute inset-0 flex items-center justify-center">
               <h3 className="text-white text-lg font-semibold">{photo.title}</h3>
             </div>
           </div>

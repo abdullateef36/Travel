@@ -1,7 +1,11 @@
-import type { NextConfig } from "next";
+// next.config.ts
 
-const nextConfig: NextConfig = {
-  /* config options here */
+import { NextConfig } from 'next';
+
+const config: NextConfig = {
+  images: {
+    domains: ['via.placeholder.com'], // Add the domain you want to allow
+  },
 };
 
-export default nextConfig;
+export default config;

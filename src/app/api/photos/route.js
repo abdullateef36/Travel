@@ -1,6 +1,6 @@
 // app/api/photos/route.js
 import { NextResponse } from "next/server";
-import { getPhotos } from "../../../../datastore";
+import { getPhotos } from "../../../../dataStore";
 
 export async function GET(request) {
   const { searchParams } = new URL(request.url);

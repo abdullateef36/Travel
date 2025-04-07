@@ -1,6 +1,6 @@
 // app/api/updateData/route.js
 import { NextResponse } from "next/server";
-import { addPhotos, getPhotos } from "../../../../datastore";
+import { addPhotos, getPhotos } from "../../../../dataStore";
 import https from "https";
 
 function fetchData() {
