@@ -1,7 +1,8 @@
 {
   "functions": {
     "app/api/updateData/route.js": {
-      "memory": 5024
+      "memory": 2024,
+      "maxDuration": 60
     }
   }
 }
