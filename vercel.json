@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "app/api/updateData/route.js": {
+      "schedule": "*/1 * * * *"
+    }
+  }
+}
