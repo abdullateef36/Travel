@@ -21,7 +21,7 @@ export default function Home() {
 
           <nav className="hidden md:flex space-x-6 text-sm">
             <Link href="/" className="text-white">Home</Link>
-            <Link href="/resume" className="text-white font-semibold">Resume</Link>
+            <Link href="/resume" className="text-white">Resume</Link>
             <Link href="#" className="text-white">Portfolio</Link>
             <Link href="#" className="text-white">Blog</Link>
             <Link href="#" className="text-white">Contact</Link>
