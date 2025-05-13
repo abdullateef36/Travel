@@ -51,7 +51,7 @@ export default function Home() {
               I am a passionate full stack developer with experience building scalable web and mobile applications using the MERN stack (MongoDB, Express, React/React Native, Node.js). I specialize in creating fast, responsive UIs and robust backend systems that deliver real-world business results.
             </p>
             <div className="flex justify-center md:justify-start space-x-4">
-              <a href="/resume.pdf" className="px-6 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition">
+              <a href="/cv.pdf" className="px-6 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition">
                 Download CV
               </a>
               <a href="/contact" className="px-6 py-2 rounded-full border border-gray-500 hover:bg-gray-800 transition">
