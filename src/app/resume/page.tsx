@@ -19,8 +19,8 @@ export default function Resume() {
           </div>
 
           <nav className="hidden md:flex space-x-6 text-sm">
-            <Link className="text-white" href="/">Home</Link>
-            <Link className="text-white font-semibold" href="/resume">Resume</Link>
+            <Link href="/" className="text-white">Home</Link>
+            <Link href="/resume" className="text-white">Resume</Link>
             <Link href="#">Portfolio</Link>
             <Link href="#">Blog</Link>
             <Link href="#">Contact</Link>

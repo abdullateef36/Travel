@@ -1,6 +1,7 @@
 // pages/index.tsx
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -19,12 +20,11 @@ export default function Home() {
           </div>
 
           <nav className="hidden md:flex space-x-6 text-sm">
-            <a className="font-semibold text-white" href="#">About Me</a>
-            <a href="/resume">Resume</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
-            <a href="#">Extra</a>
+            <Link href="/" className="text-white">Home</Link>
+            <Link href="/resume" className="text-white font-semibold">Resume</Link>
+            <Link href="#" className="text-white">Portfolio</Link>
+            <Link href="#" className="text-white">Blog</Link>
+            <Link href="#" className="text-white">Contact</Link>
           </nav>
 
           <div className="md:hidden">
@@ -49,7 +49,7 @@ export default function Home() {
             <p className="text-gray-400 mb-2">Web Designer</p>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Abduallateef Akinola</h1>
             <p className="text-gray-300 mb-8 leading-relaxed">
-              Fusce tempor magna mi, non egestas velit ultricies nec. Aenean convallis, risus non condimentum gravida, odio mauris ullamcorper felis, ut venenatis purus ex eu mi. Quisque imperdiet lacinia urna, a placerat sapien pretium eu.
+              I am a passionate full stack developer with experience building scalable web and mobile applications using the MERN stack (MongoDB, Express, React/React Native, Node.js). I specialize in creating fast, responsive UIs and robust backend systems that deliver real-world business results.
             </p>
             <div className="flex justify-center md:justify-start space-x-4">
               <a href="/resume.pdf" className="px-6 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition">
