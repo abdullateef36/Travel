@@ -45,7 +45,7 @@ export default function Home() {
 
           {/* Info */}
           <div className="md:ml-12 text-center md:text-left max-w-xl">
-            <p className="text-gray-400 mb-2">Web Designer</p>
+            <p className="text-gray-400 mb-2">Full Stack Developer</p>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Abduallateef Akinola</h1>
             <p className="text-gray-300 mb-8 leading-relaxed">
               I am a passionate full stack developer with experience building scalable web and mobile applications using the MERN stack (MongoDB, Express, React/React Native, Node.js). I specialize in creating fast, responsive UIs and robust backend systems that deliver real-world business results.
@@ -54,7 +54,7 @@ export default function Home() {
               <a href="/resume.pdf" className="px-6 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition">
                 Download CV
               </a>
-              <a href="#" className="px-6 py-2 rounded-full border border-gray-500 hover:bg-gray-800 transition">
+              <a href="/contact" className="px-6 py-2 rounded-full border border-gray-500 hover:bg-gray-800 transition">
                 Contact
               </a>
             </div>

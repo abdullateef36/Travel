@@ -59,7 +59,7 @@ export default function Resume() {
                   Download Resume
                 </a>
                 <a
-                  href="#"
+                  href="/contact"
                   className="px-6 py-2 rounded-full border border-gray-500 hover:bg-gray-800 transition"
                 >
                   Contact
