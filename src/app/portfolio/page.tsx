@@ -51,7 +51,7 @@ export default function Portfolio() {
                 Personal branding site built with Next.js and Tailwind CSS, optimized for performance.
               </p>
               <a
-                href="https://abdullateef.dev"
+                href="https://health-tracking-record.vercel.app/"
                 className="text-blue-400 hover:underline"
                 target="_blank"
               >
