@@ -1,12 +1,12 @@
-// app/portfolio/page.tsx
+// app/contact/page.tsx
 import Head from "next/head";
 import Link from "next/link";
 
-export default function Portfolio() {
+export default function Contact() {
   return (
     <>
       <Head>
-        <title>Portfolio - Abdullateef Akinola</title>
+        <title>Contact - Abdullateef Akinola</title>
       </Head>
       <main className="min-h-screen bg-[#1c1c1c] text-white px-6 md:px-20 py-10">
         {/* Header */}
@@ -21,44 +21,46 @@ export default function Portfolio() {
           <nav className="hidden md:flex space-x-6 text-sm">
             <Link href="/">Home</Link>
             <Link href="/resume">Resume</Link>
-            <Link href="/portfolio" className="font-semibold text-white">Portfolio</Link>
-            <Link href="/contact">Contact</Link>
+            <Link href="/portfolio">Portfolio</Link>
+            <Link href="/contact" className="font-semibold text-white">Contact</Link>
           </nav>
         </header>
 
         {/* Content */}
-        <section className="mt-20">
-          <h1 className="text-4xl font-bold text-blue-400 mb-10">My Portfolio</h1>
-          <div className="grid md:grid-cols-2 gap-10">
-            {/* Project Card Example */}
-            <div className="bg-[#2c2c2c] rounded-lg p-6 shadow-lg">
-              <h3 className="text-xl font-semibold mb-2">Travel App</h3>
-              <p className="text-gray-400 mb-2">
-                A mobile app built with React Native and Firebase for booking trips and tracking destinations.
-              </p>
-              <a
-                href="https://github.com/yourusername/travel-app"
-                className="text-blue-400 hover:underline"
-                target="_blank"
-              >
-                View on GitHub →
-              </a>
+        <section className="mt-20 max-w-xl mx-auto">
+          <h1 className="text-4xl font-bold text-blue-400 mb-10 text-center">Contact Me</h1>
+          <form className="space-y-6">
+            <div>
+              <label className="block text-sm mb-1">Name</label>
+              <input
+                type="text"
+                className="w-full px-4 py-2 bg-[#2c2c2c] border border-gray-700 rounded text-white"
+                placeholder="Your Name"
+              />
             </div>
-
-            <div className="bg-[#2c2c2c] rounded-lg p-6 shadow-lg">
-              <h3 className="text-xl font-semibold mb-2">Portfolio Website</h3>
-              <p className="text-gray-400 mb-2">
-                Personal branding site built with Next.js and Tailwind CSS, optimized for performance.
-              </p>
-              <a
-                href="https://abdullateef.dev"
-                className="text-blue-400 hover:underline"
-                target="_blank"
-              >
-                Visit Site →
-              </a>
+            <div>
+              <label className="block text-sm mb-1">Email</label>
+              <input
+                type="email"
+                className="w-full px-4 py-2 bg-[#2c2c2c] border border-gray-700 rounded text-white"
+                placeholder="you@example.com"
+              />
             </div>
-          </div>
+            <div>
+              <label className="block text-sm mb-1">Message</label>
+              <textarea
+                rows={5}
+                className="w-full px-4 py-2 bg-[#2c2c2c] border border-gray-700 rounded text-white"
+                placeholder="Write your message here..."
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              className="w-full py-2 px-4 bg-blue-600 hover:bg-blue-700 rounded text-white transition"
+            >
+              Send Message
+            </button>
+          </form>
         </section>
       </main>
     </>
