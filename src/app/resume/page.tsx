@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Resume() {
   return (
@@ -18,11 +19,11 @@ export default function Resume() {
           </div>
 
           <nav className="hidden md:flex space-x-6 text-sm">
-            <a className="text-white" href="">Home</a>
-            <a className="text-white font-semibold" href="/resume">Resume</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
+            <Link className="text-white" href="/">Home</Link>
+            <Link className="text-white font-semibold" href="/resume">Resume</Link>
+            <Link href="#">Portfolio</Link>
+            <Link href="#">Blog</Link>
+            <Link href="#">Contact</Link>
           </nav>
 
           <div className="md:hidden">
@@ -56,7 +57,7 @@ export default function Resume() {
                   download
                   className="px-6 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition"
                 >
-                  Download CV
+                  Download Resume
                 </a>
                 <a
                   href="#"
