@@ -34,14 +34,14 @@ export default function Home() {
         {/* Main Section */}
         <section className="flex flex-col md:flex-row items-center justify-between mt-20">
           {/* Image */}
-          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-[#2c2c2c] shadow-xl mb-10 md:mb-0">
-            <Image
-              src="/profile.jpg"
-              alt="Alex Smith"
-              fill
-              className="object-cover"
-            />
-          </div>
+          <div className="group relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-[#2c2c2c] shadow-xl mb-10 md:mb-0 transition-transform duration-500 hover:rotate-6 hover:scale-105">
+          <Image
+            src="/profile.jpg"
+            alt="Abdullateef Akinola"
+            fill
+            className="object-cover transform transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-1 group-hover:rotate-2"
+          />
+        </div>
 
           {/* Info */}
           <div className="md:ml-12 text-center md:text-left max-w-xl">
