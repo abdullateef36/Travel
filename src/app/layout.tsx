@@ -5,7 +5,7 @@ import { Fira_Code } from "next/font/google";
 
 const firaCode = Fira_Code({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
