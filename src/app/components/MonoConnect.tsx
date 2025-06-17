@@ -11,15 +11,6 @@ export default function MonoConnectButton() {
     const mono = new MonoConnect({
       key: "test_pk_UTSE2b9lxLYx7usd2mHn", // ✅ Your public test key
       scope: "all", // required to get `code`
-      customer: {
-        id: "65c31fa54e0e963044f014bb", // Optional
-        name: "Samuel Olamide",
-        email: "samuel@neem.com",
-        identity: {
-          type: "bvn",
-          number: "2323233239",
-        },
-      },
       onSuccess: async ({ code }: { code: string }) => {
         console.log("Mono code:", code);
 
