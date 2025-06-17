@@ -1,4 +1,3 @@
-// components/MonoLinkButton.tsx
 "use client";
 
 import React from "react";
@@ -32,7 +31,7 @@ export default function MonoLinkButton() {
   return (
     <button
       onClick={handleClick}
-      className="px-6 py-3 bg-blue-600 text-white rounded-md"
+      className="px-6 py-3 bg-blue-600 text-white rounded-md cursor-pointer hover:bg-blue-700 transition"
     >
       Link Bank Account
     </button>
