@@ -1,8 +1,11 @@
 "use client";
 
 import { useCallback } from "react";
+import { useRouter } from "next/navigation";
 
 export default function MonoConnectButton() {
+  const router = useRouter();
+
   const handleMonoConnect = useCallback(async () => {
     if (typeof window === "undefined") return;
 
@@ -29,25 +32,13 @@ export default function MonoConnectButton() {
         }
 
         const accountId = data.accountId;
-        alert("Account linked: " + accountId);
         console.log("Fetched accountId:", accountId);
 
-        // Step 2: Fetch transactions
-        const txRes = await fetch("/api/mono/transactions", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ accountId }),
-        });
+        // ✅ Save to localStorage so /transactions page can use it
+        localStorage.setItem("accountId", accountId);
 
-        const txData = await txRes.json();
-
-        if (txData?.transactions?.data) {
-          console.log("Transactions:", txData.transactions.data);
-          alert("Transaction count: " + txData.transactions.data.length);
-        } else {
-          console.error("Failed to fetch transactions", txData);
-          alert("Failed to fetch transactions");
-        }
+        // ✅ Redirect to /transactions
+        router.push("/TransactionPage");
       },
       onClose: () => console.log("Widget closed"),
       onLoad: () => console.log("Mono widget loaded"),
@@ -55,14 +46,14 @@ export default function MonoConnectButton() {
 
     mono.setup();
     mono.open();
-  }, []);
+  }, [router]);
 
   return (
     <button
       onClick={handleMonoConnect}
       className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
     >
-      Link Bank with Mono
+      Bank Sync
     </button>
   );
 }
