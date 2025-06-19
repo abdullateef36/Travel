@@ -4,7 +4,7 @@ export async function POST(req: NextRequest) {
   try {
     const { accountId } = await req.json();
 
-    const res = await fetch(`https://api.withmono.com/accounts/${accountId}/transactions`, {
+    const res = await fetch(`https://api.withmono.com/accounts/${accountId}/transactions?limit=100`, {
       method: "GET",
       headers: {
         "mono-sec-key": process.env.MONO_SECRET_KEY || "test_sk_O3Mxaqu1NcbmgYOSjvXK",
