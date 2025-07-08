@@ -2,16 +2,20 @@
 
 :root {
   /* Define your fonts */
-  --font-header: 'Didot', serif;
-  --font-body: var(--font-Fira_Code), sans-serif;
+  --font-header: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
 }
 
-/* Use Mulish as the default for the body */
+/* Use Inter as the default for the body */
 body {
-  font-family: var(--font-Fira_Code);
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: #333; /* Dark gray text like in the image */
 }
 
-/* Apply Didot to headers and any element you prefer */
+/* Headers styling */
 h1, h2, h3, h4, h5, h6, .header {
-  font-family: var(--font-Fira_Code);
+  font-family: var(--font-header);
+  font-weight: 600; /* Semi-bold headers like in the image */
+  color: #111; /* Darker text for headers */
 }

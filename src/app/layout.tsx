@@ -1,16 +1,16 @@
 // app/nosidebar/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
-import { Fira_Code } from "next/font/google";
+import { Inter } from "next/font/google";
 
-const firaCode = Fira_Code({
+const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "Front Page",
-  description: "My Profile.",
+  title: "Dashboard",
+  description: "Business Dashboard.",
 };
 
 export default function NoSidebarLayout({
@@ -20,7 +20,7 @@ export default function NoSidebarLayout({
 }) {
   return (
     <html lang="en">
-      <body className={firaCode.className}>
+      <body className={inter.className}>
         {/* Only render the page content without a sidebar */}
         {children}
       </body>
